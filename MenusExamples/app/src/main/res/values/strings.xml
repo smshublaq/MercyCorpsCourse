@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">MenusExamples</string>
+    <string name="delete">delete</string>
+
+    <array name="myArray">
+        <item>A</item>
+        <item>B</item>
+        <item>C</item>
+    </array>
+</resources>
