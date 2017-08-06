@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="Notification Settings">
+
+        <CheckBoxPreference android:key="checkbox_pref" android:title="Pref 1"
+            android:summary="You can do it"/>
+
+    </PreferenceCategory>
+
+
+    <PreferenceCategory             android:id="@string/prefId"
+        android:title="Rings Settings">
+
+        <SwitchPreference android:title="On/Off" android:summary="@string/app_name"
+            android:key="switch_pref"/>
+
+
+        <EditTextPreference android:title="Edit Text Pref"
+            android:summary="Edittext zzz"
+            android:key="edit_text_pref" android:dialogTitle="@string/app_name"
+            />
+
+
+
+    </PreferenceCategory>
+</PreferenceScreen>
