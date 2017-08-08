@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    
+    tools:context="com.api.tabsviewpager.MainActivity">
+
+    <android.support.design.widget.TabLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
+        app:tabMode="fixed"
+        app:tabGravity="fill"
+        android:id="@+id/tabs"
+        app:tabBackground="@color/colorPrimaryDark"
+        app:tabIndicatorColor="@color/colorPrimary"
+        app:tabSelectedTextColor="#FFFFFF"
+
+        >
+
+        <!--
+        <android.support.design.widget.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="aaa"
+            android:id="@+id/tab1"
+            />
+
+        <android.support.design.widget.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="bbb"
+            android:id="@+id/tab2"
+            />
+            -->
+
+
+    </android.support.design.widget.TabLayout>
+
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible"
+        >
+
+    </android.support.v4.view.ViewPager>
+
+
+</LinearLayout>
