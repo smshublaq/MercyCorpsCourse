@@ -26,14 +26,22 @@ public class Main {
         String token = "eHz12xzAheM:APA91bEWNC90qsgcwvYQ6Ec5W57yEG6i_f7Hpfz8L4xreJtOtcFOhy5g8mE0f2ZRy0x_2poVRbsqLivPWzBdb5oxzJmCHeZGPwjUDyHoManWu-Iuj56qkbyopx-tGCJz0b6JCdjvrjPn";
 
         OkHttpClient client = new OkHttpClient();
+        
         JSONObject root = new JSONObject();
         root.put("to", token);
         root.put("priority", "high");
+        
         JSONObject notification = new JSONObject();
         notification.put("body", "aaa");
         notification.put("title","zzzz");
-        
         root.put("notification", notification);
+
+        
+        JSONObject data = new JSONObject();
+        data.put("name", "eyad");
+        data.put("subject","elkronz");
+        root.put("data", data);
+
         
         RequestBody body = RequestBody.create(JSON, root.toString());
         Request request = new Request.Builder()
