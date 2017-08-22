@@ -26,7 +26,7 @@ public class BatteryBroadCast extends BroadcastReceiver {
         Intent goToMain = new Intent(context,MainActivity.class);
         goToMain.putExtra("name","ayman ayyad");
 
-        PendingIntent pendingIntent = PendingIntent.getActivity(context,0,intent,PendingIntent.FLAG_UPDATE_CURRENT);
+        PendingIntent pendingIntent = PendingIntent.getActivity(context,0,goToMain,PendingIntent.FLAG_UPDATE_CURRENT);
         NotificationCompat.Builder notificationCompat = new NotificationCompat.Builder(context);
         notificationCompat.setAutoCancel(true);
         //notificationCompat.setOngoing(true);
